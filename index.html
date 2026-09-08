@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BytheHype — thoughtful everyday essentials." />
+    <title>BytheHype — Everyday essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">Free shipping on orders over $50 <span>•</span> Easy 30-day returns</div>
+    <header>
+      <a class="brand" href="#top">BytheHype<span>®</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a>
+      </nav>
+      <button class="cart-button" id="cartButton" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Made for the in-between</p>
+          <h1>Small things.<br /><em>Better days.</em></h1>
+          <p class="hero-text">Useful objects for a life less cluttered. Designed to earn their place in your everyday.</p>
+          <a class="button dark" href="#shop">Explore the collection <span>→</span></a>
+        </div>
+        <div class="hero-art" aria-label="Minimal product arrangement illustration">
+          <div class="sun"></div><div class="arch"></div><div class="vase"><i></i></div><div class="orb"></div><p>01 / EVERYDAY OBJECTS</p>
+        </div>
+      </section>
+
+      <section class="intro" id="story">
+        <p class="eyebrow">A more considered cart</p>
+        <h2>Not more stuff.<br />Just the <em>right</em> stuff.</h2>
+        <p>We seek out well-made, quietly useful finds that make your routines a little lighter.</p>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="section-heading"><div><p class="eyebrow">The edit</p><h2>Fresh finds</h2></div><button class="text-button" id="filterButton">All products <span>⌄</span></button></div>
+        <div class="products" id="products"></div>
+      </section>
+
+      <section class="promise">
+        <div><span>01</span><h3>Chosen with care</h3><p>We obsess over the details, so you don't have to.</p></div>
+        <div><span>02</span><h3>Fairly priced</h3><p>Good design should feel like an easy yes.</p></div>
+        <div><span>03</span><h3>Here for it</h3><p>Real support from real people, always.</p></div>
+      </section>
+
+      <section class="newsletter" id="journal"><p class="eyebrow">A little note from us</p><h2>Good things, <em>occasionally.</em></h2><form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button class="button light" type="submit">Join us <span>→</span></button></form><p class="form-message" id="formMessage" aria-live="polite"></p></section>
+    </main>
+
+    <footer><a class="brand" href="#top">BytheHype<span>®</span></a><p>© 2026 BytheHype. Made with intention.</p><div><a href="#">Instagram</a><a href="#">Pinterest</a></div></footer>
+    <aside class="cart" id="cart" aria-label="Shopping bag" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty">Your bag is waiting for something good.</p></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="button dark full" id="checkout">Checkout <span>→</span></button></div></aside>
+    <div class="overlay" id="overlay"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
