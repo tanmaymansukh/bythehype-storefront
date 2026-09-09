@@ -1,0 +1,15 @@
+{
+  "name": "BytheHype",
+  "description": "Aesthetic desk and home organisation for a clearer day.",
+  "tagline": "Clear desk. Clear head.",
+  "currency": "INR",
+  "locale": "en-IN",
+  "contact": { "email": "hello@bythehype.example", "supportEmail": "support@bythehype.example", "status": "PLACEHOLDER — replace before launch" },
+  "social": { "instagram": "#", "pinterest": "#", "status": "PLACEHOLDER — add verified profile URLs before launch" },
+  "announcement": { "primaryText": "Free shipping across India on orders over ₹999", "secondaryText": "7-day easy returns" },
+  "shipping": { "freeShippingThreshold": 999, "defaultShippingCost": "PLACEHOLDER", "serviceStatus": "Not connected — confirm carrier, rates, and delivery windows before launch" },
+  "returns": { "windowDays": 7, "policyUrl": "PLACEHOLDER — add a published returns-policy page before launch", "status": "Policy copy still needs legal and operational review" },
+  "tax": { "includedInDisplayedPrice": false, "status": "PLACEHOLDER — obtain appropriate tax advice before trading" },
+  "theme": { "name": "Desk Reset", "colors": { "ink": "#17221e", "cream": "#f6f3ed", "coral": "#df6f52", "sage": "#b7c5a7" }, "fonts": ["Manrope", "Playfair Display", "DM Mono"] },
+  "commerceStatus": { "payments": "not connected", "orders": "not connected", "inventory": "not synchronised", "supplierFulfilment": "not connected" }
+}
