@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "name": "BytheHype",
+  "description": "Aesthetic desk and home organisation for a clearer day.",
+  "tagline": "Clear desk. Clear head.",
+  "currency": "INR",
+  "locale": "en-IN",
+  "siteUrl": "https://tanmaymansukh.github.io/bythehype-storefront/",
+  "contact": { "supportEmail": null, "responseTime": null, "status": "Support contact details must be added before launch." },
+  "social": { "instagram": null, "pinterest": null },
+  "announcement": { "primaryText": "Curated desk essentials", "secondaryText": "Shipping details are being finalised" },
+  "shipping": { "mode": "unconfigured", "freeShippingThreshold": null, "flatRate": null, "locationRates": [], "statusMessage": "Shipping rates and delivery windows will be confirmed before orders open." },
+  "tax": { "includedInDisplayedPrice": null, "statusMessage": "Taxes must be confirmed before launch." },
+  "payment": { "provider": null, "createOrderEndpoint": null, "status": "not-connected" },
+  "commerceStatus": { "payments": "not connected", "orders": "not connected", "inventory": "not synchronised", "supplierFulfilment": "not connected" }
+}
