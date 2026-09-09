@@ -3,59 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BytheHype — desk essentials for a clearer day." />
-    <title>BytheHype — Reset your desk</title>
+    <meta name="description" content="BytheHype — aesthetic desk and home organisation for a clearer day." />
+    <title>BytheHype — Clear desk. Clear head.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="announcement">Free shipping across India on orders over ₹999 <span>•</span> 7-day easy returns</div>
-    <header>
-      <a class="brand" href="#top">BytheHype<span>®</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a>
-      </nav>
-      <button class="cart-button" id="cartButton" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
-    </header>
-
+    <div class="announcement" id="announcement">Free shipping across India on orders over ₹999 <span>•</span> 7-day easy returns</div>
+    <header><a class="brand" id="brand" href="#top">BytheHype<span>®</span></a><button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">Menu</button><nav id="mainNav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a></nav><button class="cart-button" id="cartButton" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button></header>
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">The desk reset edit</p>
-          <h1>Clear desk.<br /><em>Clear head.</em></h1>
-          <p class="hero-text">Tiny upgrades that turn your chaotic setup into a place you actually want to work from.</p>
-          <a class="button dark" href="#shop">Shop the reset <span>→</span></a>
-        </div>
-        <div class="hero-art" aria-label="Minimal product arrangement illustration">
-          <div class="sun"></div><div class="arch"></div><div class="vase"><i></i></div><div class="orb"></div><p>01 / DESK ESSENTIALS</p>
-        </div>
-      </section>
-
-      <section class="intro" id="story">
-        <p class="eyebrow">The BytheHype rule</p>
-        <h2>Less mess.<br />More <em>momentum.</em></h2>
-        <p>Every piece has one job: make your daily desk routine feel lighter, calmer and more put together.</p>
-      </section>
-
-      <section class="shop-section" id="shop">
-        <div class="section-heading"><div><p class="eyebrow">Build your setup</p><h2>The desk reset</h2></div><button class="text-button" id="filterButton">All essentials <span>⌄</span></button></div>
-        <div class="products" id="products"></div>
-      </section>
-
-      <section class="promise">
-        <div><span>01</span><h3>Made to be shown</h3><p>Satisfying little upgrades with instant before-and-after energy.</p></div>
-        <div><span>02</span><h3>Built for daily use</h3><p>Useful, durable desk details that earn their place.</p></div>
-        <div><span>03</span><h3>Delivered across India</h3><p>Trackable shipping and simple support from real people.</p></div>
-      </section>
-
+      <section class="hero"><div class="hero-copy"><p class="eyebrow">The desk reset edit</p><h1>Clear desk.<br /><em>Clear head.</em></h1><p class="hero-text">Tiny upgrades that turn your chaotic setup into a place you actually want to work from.</p><a class="button dark" href="#shop">Shop the reset <span>→</span></a></div><div class="hero-art" aria-label="Minimal desk arrangement illustration"><div class="sun"></div><div class="arch"></div><div class="vase"><i></i></div><div class="orb"></div><p>01 / DESK ESSENTIALS</p></div></section>
+      <section class="intro" id="story"><p class="eyebrow">The BytheHype rule</p><h2>Less mess.<br />More <em>momentum.</em></h2><p>Every piece has one job: make your daily desk routine feel lighter, calmer and more put together.</p></section>
+      <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">Build your setup</p><h2>The desk reset</h2></div><label class="sr-only" for="sortProducts">Sort products</label><select id="sortProducts" class="select-control"><option value="featured">Featured first</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></div><div class="catalog-controls"><label for="productSearch" class="sr-only">Search products</label><input id="productSearch" type="search" placeholder="Search the collection" /><label for="categoryFilter" class="sr-only">Filter by category</label><select id="categoryFilter" class="select-control"><option value="all">All categories</option></select></div><p id="catalogStatus" class="catalog-status" aria-live="polite"></p><div class="products" id="products" aria-live="polite"></div></section>
+      <section class="promise"><div><span>01</span><h3>Made to be shown</h3><p>Satisfying little upgrades with instant before-and-after energy.</p></div><div><span>02</span><h3>Built for daily use</h3><p>Useful, durable desk details that earn their place.</p></div><div><span>03</span><h3>Plan before launch</h3><p>Shipping and fulfilment details will be confirmed before orders open.</p></div></section>
       <section class="newsletter" id="journal"><p class="eyebrow">Join the reset</p><h2>Better setups, <em>occasionally.</em></h2><form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button class="button light" type="submit">Get the edit <span>→</span></button></form><p class="form-message" id="formMessage" aria-live="polite"></p></section>
     </main>
-
-    <footer><a class="brand" href="#top">BytheHype<span>®</span></a><p>© 2026 BytheHype. Made with intention.</p><div><a href="#">Instagram</a><a href="#">Pinterest</a></div></footer>
-    <aside class="cart" id="cart" aria-label="Shopping bag" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty">Your bag is waiting for something good.</p></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="button dark full" id="checkout">Checkout <span>→</span></button></div></aside>
-    <div class="overlay" id="overlay"></div>
-    <script src="app.js"></script>
+    <footer><a class="brand" href="#top">BytheHype<span>®</span></a><p>© <span id="year"></span> BytheHype. Made with intention.</p><div><a id="instagramLink" href="#">Instagram</a><a id="pinterestLink" href="#">Pinterest</a></div></footer>
+    <aside class="cart" id="cart" aria-label="Shopping bag" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button id="closeCart" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty">Your bag is waiting for something good.</p></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">₹0</strong></div><button class="button dark full" id="checkout">Checkout <span>→</span></button><p class="checkout-note">Checkout is not connected yet.</p></div></aside><div class="overlay" id="overlay"></div>
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,34 +1,23 @@
 # BytheHype storefront
 
-A responsive starter website for a dropshipping brand. It includes a homepage, product collection, shopping bag UI, and email signup interaction.
+BytheHype is a GitHub Pages-ready static storefront for aesthetic desk and home organisation. Its message is **“Clear desk. Clear head.”** It is not Shopify and has no live payments, orders, supplier fulfilment, or inventory sync.
 
-## Open it
+## Run locally
 
-Open `index.html` in any browser. No installation is required.
+The storefront reads JSON with `fetch`, so use a local web server rather than opening HTML files directly. From this folder run `python -m http.server 8000`, then open `http://localhost:8000`. No dependencies or build step are required.
 
-## Publish it on GitHub
+## Publish with GitHub Pages
 
-1. Create a new empty GitHub repository named `bythehype-storefront`.
-2. In this folder, run:
+Commit this folder to GitHub. In **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save. `index.html` and all asset paths are compatible with a GitHub Pages project URL.
 
-   ```powershell
-   git init
-   git add .
-   git commit -m "Create BytheHype storefront"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/bythehype-storefront.git
-   git push -u origin main
-   ```
+## Project map
 
-3. In the repository settings, turn on **GitHub Pages** to publish the site.
+- `data/products.json` — catalogue and sourcing placeholders.
+- `data/store.json` — store settings, branding, policy placeholders, and integration status.
+- `js/app.js` — homepage rendering, controls, and browser-local cart.
+- `js/product.js` and `pages/product.html` — data-driven product detail route.
+- `images/` — editable SVG product illustrations.
+- `STORE_DATA.md` — product-management instructions.
+- `PROJECT_STATE.md` — handoff record and next work.
 
-## Before taking real orders
-
-This is a visual storefront, not a live store yet. Choose and connect:
-
-- A product supplier (for example, CJdropshipping, Spocket, or Zendrop)
-- A payment provider (Stripe or Shopify Payments)
-- A real checkout and product catalog
-- A domain name, business email, shipping policy, return policy, and privacy policy
-
-For most first-time stores, Shopify is the simplest way to connect suppliers, inventory, payments, and fulfillment. This design can be recreated in a Shopify theme or used as the visual starting point for a custom store.
+Read `PROJECT_STATE.md` first when continuing the project.
